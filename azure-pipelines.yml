@@ -16,9 +16,9 @@ steps:
 
 - task: SnykSecurityScan@0
   inputs:
-    serviceConnectionEndpoint: 'Snyk Pipelines Example Connection'
+    serviceConnectionEndpoint: 'Test Scan'
     testType: 'container'
     dockerImageName: 'my-container-image-name'
     dockerfilePath: 'Dockerfile'
     monitorOnBuild: true
-    failOnIssues: false
+    failOnIssues: true
